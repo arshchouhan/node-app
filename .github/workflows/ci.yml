@@ -12,6 +12,7 @@ jobs:
           pwd
           ls -la
           cat Dockerfile
+          
       - name: docker login
         uses: docker/login-action@v4
         with:
