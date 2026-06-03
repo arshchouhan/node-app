@@ -1,4 +1,4 @@
-name: push to hub
+name: ci automation
 
 on:
   push:
