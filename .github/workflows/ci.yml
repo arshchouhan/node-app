@@ -1,11 +1,11 @@
 name: push to hub
 
-on: 
+on:
   push:
     branches:
       - main
 
-environment:
+env:
   IMAGE: "arshch246/app-ci:latest"
 
 jobs:
@@ -31,5 +31,5 @@ jobs:
           tags: ${{secrets.DOCKER_USERNAME}}/app-ci:latest
         
       - name: test environment variable
-        run : "${IMAGE}"
+        run: echo "${{ env.IMAGE }}"
         
