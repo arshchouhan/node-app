@@ -6,7 +6,7 @@ on:
       - main
 
 jobs:
-  ai-app:
+  Ci-app:
     runs-on: ubuntu-latest
     
     steps:
